@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <h1 class="app-title">Dictionary</h1>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="searchForm" class="search-box" role="search" aria-label="Dictionary search">
+      <label for="wordInput" class="sr-only">Enter a word</label>
+      <input type="text" id="wordInput" placeholder="Search a word" autocomplete="off" spellcheck="false" />
+      <button id="searchBtn" type="submit" class="primary">Search</button>
+      <button id="clearBtn" type="button" class="ghost" title="Clear search">Clear</button>
+    </form>
+
+    <div id="history" class="history" aria-label="Search history"></div>
+
+    <section id="result" class="result-box" aria-live="polite" aria-busy="false"></section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <small>Powered by <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer noopener">Free Dictionary API</a></small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
