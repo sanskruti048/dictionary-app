@@ -2,6 +2,10 @@
 
 A clean, responsive single‑page dictionary built with HTML, CSS, and JavaScript. It uses the Free Dictionary API to fetch definitions, phonetics (including audio when available), and synonyms.
 
+### Live Demo
+
+🔎 [app-dictionary-api.netlify.app](https://app-dictionary-api.netlify.app)
+
 ### Features
 - **Instant search**: Press Enter or click Search to fetch definitions
 - **Phonetics and audio**: Shows phonetic text and plays pronunciation when available
